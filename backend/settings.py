@@ -39,7 +39,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
-# Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -99,11 +99,6 @@ DATABASES = {
 
 
 
-
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default']=dj_database_url.config(default='postgres://earngigz_6xv0_user:NhjQC7C8rkJsSm8iKnA8qsRTTzGVDD46@dpg-cm2rbc21hbls73fsgin0-a.oregon-postgres.render.com/earngigz_6xv0')
-DATABASES['default'].update(db_from_env)
 
 
 
